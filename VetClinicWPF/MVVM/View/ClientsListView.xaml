@@ -5,8 +5,60 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VetClinicWPF.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+             d:DesignHeight="400" d:DesignWidth="600">
+    <Grid Background="#FFE7D4FF" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid
+            Grid.Row="0">
+            <TextBlock Text="add new client:"
+                   Foreground="Black"
+                   FontSize="27"
+                   FontFamily="/VetClinicWPF;component/Fonts/#Rampart One"
+                   HorizontalAlignment="Center" Margin="192,10,192,-10"/>
+
+            <TextBlock Text="Clients list:"
+                   Foreground="Black"
+                   FontSize="25"
+                   FontFamily="/VetClinicWPF;component/Fonts/#Rampart One"
+                   Margin="8,117,415,-62"/>
+
+            <TextBox Width="110"
+                 Height="35"
+                 Margin="460,65,30,0"/>
+
+            <TextBox Width="110"
+                 Height="35"
+                 Margin="319,65,171,0"/>
+
+            <TextBox Width="110"
+                 Height="35"
+                 Margin="170,65,320,0"/>
+
+            <TextBox Width="110"
+                 Height="35"
+                 Margin="26,65,464,0"/>
+        </Grid>
+        <Grid Grid.Row="1">
+
+
+            <TextBlock Text="N A M E" Margin="35,95,712,340"
+                   />
+
+            <TextBlock Text="S U R N A M E" Margin="224,95,481,340"/>
+            <TextBlock Text="P E S E L" VerticalAlignment="Center" Margin="418,94,-418,340"/>
+            <TextBlock Text="P H O N E" Margin="615,97,126,332"/>
+
+            <DataGrid
+                  Height="225"
+                  Margin="10,65,10,10"/>
+        </Grid>
+
+
     </Grid>
+
 </UserControl>
+
