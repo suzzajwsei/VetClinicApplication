@@ -18,6 +18,14 @@
             <DataTemplate DataType="{x:Type viewModel:ClientsListViewModel}">
                 <view:ClientsListView/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:AnimalsViewModel}">
+                <view:AnimalsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ChipsViewModel}">
+                <view:ChipView/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

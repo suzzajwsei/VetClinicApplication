@@ -53,12 +53,14 @@
                              Height="80"
                              Foreground="Black"
                              FontSize="22"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding AnimalsViewCommand}"/>
                 <RadioButton Content="Chip"
                              Height="80"
                              Foreground="Black"
                              FontSize="22"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding ChipsViewCommand}"/>
                 <RadioButton Content="Procedures"
                              Height="80"
                              Foreground="Black"

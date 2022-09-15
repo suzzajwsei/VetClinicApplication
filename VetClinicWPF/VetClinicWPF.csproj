@@ -71,6 +71,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MVVM\View\AnimalsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\ChipView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\ClientsListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -89,9 +97,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVVM\ViewModel\AnimalsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ChipsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ClientsListViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ClientViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
+    <Compile Include="MVVM\View\AnimalsView.xaml.cs">
+      <DependentUpon>AnimalsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\ChipView.xaml.cs">
+      <DependentUpon>ChipView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\ClientsListView.xaml.cs">
       <DependentUpon>ClientsListView.xaml</DependentUpon>
     </Compile>
