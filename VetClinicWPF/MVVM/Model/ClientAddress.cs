@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace VetClinicWPF.MVVM.Model
 {
-    class ClientAddresse
+    class ClientAddress
     {
         [RegularExpression("^[0-9]{2}-[0-9]{3}")]
         public string ZipCode { get; set; }
