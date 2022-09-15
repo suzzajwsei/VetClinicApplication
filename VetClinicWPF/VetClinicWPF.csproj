@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -101,6 +102,13 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVVM\Model\Animal.cs" />
+    <Compile Include="MVVM\Model\AppDBContexst.cs" />
+    <Compile Include="MVVM\Model\Chip.cs" />
+    <Compile Include="MVVM\Model\Client.cs" />
+    <Compile Include="MVVM\Model\ClientAddress.cs" />
+    <Compile Include="MVVM\Model\MedProcedureList.cs" />
+    <Compile Include="MVVM\Model\RabiesVaccination.cs" />
     <Compile Include="MVVM\ViewModel\AnimalsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ChipsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\ClientsListViewModel.cs" />
@@ -150,9 +158,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MVVM\Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\bunny.png" />
   </ItemGroup>

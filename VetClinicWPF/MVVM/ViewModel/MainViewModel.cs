@@ -35,6 +35,10 @@ namespace VetClinicWPF.MVVM.ViewModel
                 OnPropertyChanged();
             }
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public MainViewModel()
         {
             ClientVM = new ClientViewModel();

@@ -22,7 +22,7 @@
                  Margin="131,77,409,288"
                      Style="{StaticResource ModernTextbox}"/>
         <TextBlock Text="PROCEDURE NAME:" Margin="67,52,470,328"/>
-        <TextBlock Text="PRICE:" Margin="387,52,215,335"/>
+        <TextBlock Text="PRICE:" Margin="387,52,215,328"/>
         <TextBlock Text="List of all medical procedures:"
                    Foreground="Black"
                    FontSize="25"
