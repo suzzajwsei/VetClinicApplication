@@ -73,13 +73,19 @@
                              Command="{Binding ClientViewCommand}"/>
             </StackPanel>
 
-            <TextBox Width="250"
-                     Height="40"
-                     VerticalAlignment="Center"
-                     HorizontalAlignment="Right"
-                     Margin="5"
-                     Grid.Column="1"
-                     Style="{StaticResource ModernTextbox}"/>
+            <Button Click="Button_Click_Close"
+                Width="35"
+                    Height="35"
+                    Background="White" Grid.Column="1" Margin="605,10,10,55">
+                ✖
+            </Button>
+
+            <Button Click="Button_Click_Minimize"
+                Width="35"
+                    Height="35"
+                    Background="White" Grid.Column="1" Margin="555,10,60,55">
+               ➖
+            </Button>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"

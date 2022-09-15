@@ -29,5 +29,15 @@ namespace VetClinicWPF
         {
 
         }
+
+        private void Button_Click_Minimize(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void Button_Click_Close(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

@@ -46,7 +46,7 @@
                  Margin="26,65,464,0"
                      Style="{StaticResource ModernTextbox}"/>
 
-            <TextBlock Text="N A M E" Margin="26,51,507,83"
+            <TextBlock Text="N A M E" Margin="26,67,507,67"
                    />
 
             <TextBlock Text="S U R N A M E" Margin="170,67,355,63"/>
