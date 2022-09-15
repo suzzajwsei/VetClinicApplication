@@ -13,6 +13,7 @@ namespace VetClinicWPF.MVVM.ViewModel
         public RelayCommand ClientsListViewCommand { get; set; }
         public RelayCommand AnimalsViewCommand { get; set; }
         public RelayCommand ChipsViewCommand { get; set; }
+        public RelayCommand ProceduresViewCommand { get; set; }
 
 
         public ClientViewModel ClientVM { get; set; }
@@ -21,6 +22,7 @@ namespace VetClinicWPF.MVVM.ViewModel
 
         public AnimalsViewModel AnimalsVM { get; set; }
         public ChipsViewModel ChipsVM { get; set; }
+        public ProceduresViewModel ProceduresVM { get; set; }
 
         private object _currentView;
 
@@ -39,6 +41,7 @@ namespace VetClinicWPF.MVVM.ViewModel
             ClientsListVM = new ClientsListViewModel();
             AnimalsVM = new AnimalsViewModel();
             ChipsVM = new ChipsViewModel();
+            ProceduresVM = new ProceduresViewModel();
          
             CurrentView = ClientVM;
 
@@ -60,6 +63,11 @@ namespace VetClinicWPF.MVVM.ViewModel
             ChipsViewCommand = new RelayCommand(o =>
             {
                 CurrentView = ChipsVM;
+            });
+
+            ProceduresViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = ProceduresVM;
             });
         }
     }

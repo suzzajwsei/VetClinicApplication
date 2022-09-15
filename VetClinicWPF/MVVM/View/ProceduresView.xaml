@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="VetClinicWPF.MVVM.View.ProceduresView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VetClinicWPF.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="650">
+    <Grid Background="#E7D4FF">
+        <TextBlock Text="Add new procedure:"
+                    Foreground="Black"
+                   FontSize="27"
+                   FontFamily="/VetClinicWPF;component/Fonts/#Rampart One"
+                   HorizontalAlignment="Center"/>
+        <TextBox Width="110"
+                 Height="35"
+                 Margin="409,77,131,288"
+                     Style="{StaticResource ModernTextbox}"/>
+
+        <TextBox Width="110"
+                 Height="35"
+                 Margin="131,77,409,288"
+                     Style="{StaticResource ModernTextbox}"/>
+        <TextBlock Text="PROCEDURE NAME:" Margin="67,52,470,328"/>
+        <TextBlock Text="PRICE:" Margin="387,52,215,335"/>
+        <TextBlock Text="List of all medical procedures:"
+                   Foreground="Black"
+                   FontSize="25"
+                   FontFamily="/VetClinicWPF;component/Fonts/#Rampart One"
+                   Margin="10,131,215,232"/>
+
+        <DataGrid Margin="10,173,10,15"/>
+
+    </Grid>
+</UserControl>

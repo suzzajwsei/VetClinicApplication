@@ -26,6 +26,10 @@
             <DataTemplate DataType="{x:Type viewModel:ChipsViewModel}">
                 <view:ChipView/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ProceduresViewModel}">
+                <view:ProceduresView/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

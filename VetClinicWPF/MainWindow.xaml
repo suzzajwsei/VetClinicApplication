@@ -65,7 +65,8 @@
                              Height="80"
                              Foreground="Black"
                              FontSize="22"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding ProceduresViewCommand}"/>
                 <RadioButton Content="Back"
                              Height="80"
                              Foreground="Black"
