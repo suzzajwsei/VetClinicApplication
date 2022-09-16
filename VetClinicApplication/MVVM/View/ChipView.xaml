@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VetClinicApplication.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Loaded="DataGChips">
     <Grid Background="#FFE7D4FF">
         <TextBlock Text="List of CHIPS registered in base: "
                    Foreground="Black"
@@ -15,6 +16,7 @@
                    Margin="0,30,0,0"/>
         <DataGrid Width="600"
                   Height="350"
-                  Margin="100,75,100,25"/>
+                  Margin="100,75,100,25"
+                  x:Name="DataGridChips"/>
     </Grid>
 </UserControl>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VetClinicApplication.MVVM.Model;
 
 namespace VetClinicApplication.MVVM.View
 {
@@ -24,5 +25,15 @@ namespace VetClinicApplication.MVVM.View
         {
             InitializeComponent();
         }
+
+        private void DataGChips(object sender, RoutedEventArgs e)
+        {
+            using (var db = new AppDBContext())
+            {
+                var chip = from ch in db.Chips select ch;
+                DataGridChips.ItemsSource = chip.ToList();
+            }
+        }
+
     }
 }

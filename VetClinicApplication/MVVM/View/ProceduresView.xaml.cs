@@ -32,11 +32,20 @@ namespace VetClinicApplication.MVVM.View
             {
                 var procedure = new MedProcedureList();
                 procedure.MedProcName = ProcedureName.Text;
-                procedure.Price = Convert.ToInt32(ProcedurePrice.Text);
+                procedure.Price = Convert.ToDecimal(ProcedurePrice.Text);
                 
 
                 await db.MedProceduresList.AddAsync(procedure);
                 await db.SaveChangesAsync();
+            }
+        }
+
+        private void ReadDBMedProcedures(object sender, RoutedEventArgs e)
+        {
+            using (var db = new AppDBContext())
+            {
+                var medprocedure = from a in db.MedProceduresList select a;
+                DataGridProcedures.ItemsSource = medprocedure.ToList();
             }
         }
     }

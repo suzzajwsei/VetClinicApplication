@@ -12,6 +12,6 @@ namespace VetClinicApplication.MVVM.Model
         [Key]
         public int MedProcNumber { get; set; }
         public string MedProcName { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
     }
 }
