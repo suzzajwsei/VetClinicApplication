@@ -10,42 +10,36 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace VetClinicApplication
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy StartingWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartingWindow : Window
     {
-        public MainWindow()
+        public StartingWindow()
         {
             InitializeComponent();
         }
 
-        private void ContentControl_SourceUpdated(object sender, DataTransferEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_Minimize(object sender, RoutedEventArgs e)
-        {
-            WindowState = WindowState.Minimized;
-        }
-
-        private void Button_Click_Close(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
-
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.LeftButton==MouseButtonState.Pressed)
+            if (e.LeftButton == MouseButtonState.Pressed)
             {
                 DragMove();
             }
+        }
+
+        private void Button_Click_ToMain(object sender, RoutedEventArgs e)
+        {
+            
+            MainWindow mwindow = new MainWindow();
+            mwindow.Show();
+            this.Close();
+            
+            
         }
     }
 }

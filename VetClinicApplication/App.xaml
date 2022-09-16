@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:VetClinicApplication"
              xmlns:viewModel="clr-namespace:VetClinicApplication.MVVM.ViewModel"
              xmlns:view="clr-namespace:VetClinicApplication.MVVM.View"
-             StartupUri="MainWindow.xaml">
+             StartupUri="StartingWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

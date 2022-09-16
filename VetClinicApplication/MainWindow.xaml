@@ -28,15 +28,41 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-
-
-            <TextBlock Text="VET"
+            <Grid Grid.Row="0">
+                <TextBlock Text="VET"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Foreground="FloralWhite"
                        FontSize="50"
-                       Margin="0,0,0,0"
-                       FontFamily="/VetClinicApplication;component/Fonts/#Rampart One"/>
+                       Margin="0,0,0,0" FontFamily="Stencil"
+                       />
+
+                <Grid MouseDown="Grid_MouseDown"
+                      Grid.Row="0" Margin="0,0,-649,0">
+                    <Button Click="Button_Click_Close"
+                Width="35"
+                    Height="35"
+                    Background="White" Margin="743,10,21,55">
+                        ✖
+                    </Button>
+
+                    <Button Click="Button_Click_Minimize"
+                Width="35"
+                    Height="35"
+                    Background="White" Margin="689,10,75,55">
+                        ➖
+                    </Button>
+                </Grid>
+
+
+
+
+            </Grid>
+            <Grid Grid.Row="1">
+
+            </Grid>
+
+
 
 
 
@@ -78,19 +104,7 @@
 
             </StackPanel>
 
-            <Button Click="Button_Click_Close"
-                Width="35"
-                    Height="35"
-                    Background="White" Grid.Column="1" Margin="605,10,10,55">
-                ✖
-            </Button>
 
-            <Button Click="Button_Click_Minimize"
-                Width="35"
-                    Height="35"
-                    Background="White" Grid.Column="1" Margin="555,10,60,55">
-                ➖
-            </Button>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
