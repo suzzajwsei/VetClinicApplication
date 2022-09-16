@@ -25,7 +25,7 @@ namespace VetClinicApplication.MVVM.Model
         public DbSet<MedProcedureList> MedProceduresList { get; set; }
 
         public DbSet<RabiesVaccination> RabiesVaccinations { get; set; }
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder modelBuilder)
         {
             modelBuilder.UseSqlServer(connectionstring);
@@ -39,11 +39,11 @@ namespace VetClinicApplication.MVVM.Model
             modelBuilder.Entity<ClientAddress>()
                 .HasNoKey();
 
-            modelBuilder.Entity<Animal>()
-                .HasNoKey();
+            //modelBuilder.Entity<Animal>()
+            //    .HasNoKey();
 
-            modelBuilder.Entity<MedProcedureList>()
-                .HasNoKey();
+            //modelBuilder.Entity<MedProcedureList>()
+            //    .HasNoKey();
 
             modelBuilder.Entity<RabiesVaccination>()
                 .HasNoKey();

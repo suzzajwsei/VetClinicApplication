@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VetClinicApplication.MVVM.Model;
 
 namespace VetClinicApplication.MVVM.View
 {
@@ -23,6 +24,20 @@ namespace VetClinicApplication.MVVM.View
         public ProceduresView()
         {
             InitializeComponent();
+        }
+
+        private async void Button_Click_Add_Procedure(object sender, RoutedEventArgs e)
+        {
+            using (var db = new AppDBContext())
+            {
+                var procedure = new MedProcedureList();
+                procedure.MedProcName = ProcedureName.Text;
+                procedure.Price = Convert.ToInt32(ProcedurePrice.Text);
+                
+
+                await db.MedProceduresList.AddAsync(procedure);
+                await db.SaveChangesAsync();
+            }
         }
     }
 }

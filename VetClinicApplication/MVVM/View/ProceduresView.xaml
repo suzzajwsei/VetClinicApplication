@@ -7,20 +7,23 @@
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="650">
     <Grid Background="#E7D4FF">
-        <TextBlock Text="Add new procedure:"
+        <Button Content="Add new procedure:"
                     Foreground="Black"
+                Background="Transparent"
                    FontSize="27"
+                BorderThickness="0"
+                Click="Button_Click_Add_Procedure"
                    FontFamily="/VetClinicApplication;component/Fonts/#Rampart One"
-                   HorizontalAlignment="Center"/>
+                   HorizontalAlignment="Center" Margin="0,0,0,348"/>
         <TextBox Width="110"
                  Height="35"
                  Margin="409,77,131,288"
-                     Style="{StaticResource ModernTextbox}"/>
+                 x:Name="ProcedurePrice"/>
 
         <TextBox Width="110"
                  Height="35"
                  Margin="131,77,409,288"
-                     Style="{StaticResource ModernTextbox}"/>
+                     x:Name="ProcedureName"/>
         <TextBlock Text="PROCEDURE NAME:" Margin="67,52,470,328"/>
         <TextBlock Text="PRICE:" Margin="387,52,215,328"/>
         <TextBlock Text="List of all medical procedures:"
@@ -29,7 +32,8 @@
                    FontFamily="/VetClinicApplication;component/Fonts/#Rampart One"
                    Margin="10,131,215,232"/>
 
-        <DataGrid Margin="10,173,10,15"/>
+        <DataGrid Margin="10,173,10,15"
+                  x:Name="DataGridProcedures"/>
 
     </Grid>
 </UserControl>

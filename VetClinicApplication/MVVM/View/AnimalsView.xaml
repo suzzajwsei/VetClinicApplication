@@ -5,28 +5,32 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:VetClinicApplication.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="600">
+             d:DesignHeight="400" d:DesignWidth="600"
+             Loaded="ReadDBAnimals">
     <Grid Background="#FFE7D4FF">
-        <TextBlock Text="add new animal:"
+        <Button Content="add new animal:"
                    Foreground="Black"
                    FontSize="27"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="Button_Click_Add_Animal"
                    FontFamily="/VetClinicApplication;component/Fonts/#Rampart One"
                    HorizontalAlignment="Center" Margin="187,0,187,359"/>
 
         <TextBox Width="110"
                  Height="35"
                  Margin="428,86,62,279"
-                     Style="{StaticResource ModernTextbox}"/>
+                 x:Name="AnimalName"/>
 
         <TextBox Width="110"
                  Height="35"
                  Margin="244,86,246,279"
-                     Style="{StaticResource ModernTextbox}"/>
+                 x:Name="AnimalSpecies"/>
 
         <TextBox Width="110"
                  Height="35"
                  Margin="60,86,430,279"
-                     Style="{StaticResource ModernTextbox}"/>
+                 x:Name="AnimalClientID"/>
 
         <TextBlock Text="CLIENT ID:" Margin="60,66,476,314"/>
         <TextBlock Text="SPIECIES:" Margin="244,66,298,319"/>
@@ -36,6 +40,7 @@
                    Foreground="Black"
                    FontSize="27"
                    FontFamily="/VetClinicApplication;component/Fonts/#Rampart One" Margin="10,126,364,230"/>
-        <DataGrid Margin="10,170,10,10"/>
+        <DataGrid Margin="10,170,10,10"
+                  x:Name="AnimalDataGrid"/>
     </Grid>
 </UserControl>
