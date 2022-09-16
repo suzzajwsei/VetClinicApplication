@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VetClinicApplication.MVVM.Model
 {
-    class Client
+    public class Client
     {
         public int ClientID { get; set; }
         public string Name { get; set; }

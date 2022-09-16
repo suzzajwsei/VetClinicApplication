@@ -11,7 +11,7 @@ namespace VetClinicApplication.MVVM.Model
     /// <summary>
     /// connecting with sql db
     /// </summary>
-    class AppDBContext : DbContext
+    public class AppDBContext : DbContext
     {
         string connectionstring = @"Data Source=DESKTOP-5PGQVC6\SQLEXPRESS; Initial Catalog=VETCLINICDB; Integrated Security=True;";
         public DbSet<Animal> Animals { get; set; }

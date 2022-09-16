@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace VetClinicApplication.MVVM.Model
 {
-    class MedProcedureList
+    public class MedProcedureList
     {
         [Key]
         public int MedProcNumber { get; set; }

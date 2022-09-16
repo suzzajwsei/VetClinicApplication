@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VetClinicApplication.MVVM.Model
 {
-    class Chip
+    public class Chip
     {
         public string AddInfo { get; set; }
         public int ChipNumber { get; set; }

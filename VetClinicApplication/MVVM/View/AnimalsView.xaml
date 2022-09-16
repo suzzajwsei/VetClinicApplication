@@ -14,13 +14,13 @@
                 Background="Transparent"
                 BorderThickness="0"
                 Click="Button_Click_Add_Animal"
-                   FontFamily="/VetClinicApplication;component/Fonts/#Rampart One"
+                   FontFamily="Harlow Solid Italic"
                    HorizontalAlignment="Center" Margin="187,0,187,359"/>
 
         <TextBox Width="110"
                  Height="35"
                  Margin="428,86,62,279"
-                 x:Name="AnimalName"/>
+                 x:Name="AnimalName" FontFamily="Segoe UI Semilight"/>
 
         <TextBox Width="110"
                  Height="35"
@@ -32,14 +32,14 @@
                  Margin="60,86,430,279"
                  x:Name="AnimalClientID"/>
 
-        <TextBlock Text="CLIENT ID:" Margin="60,66,476,314"/>
-        <TextBlock Text="SPIECIES:" Margin="244,66,298,319"/>
-        <TextBlock Text="NAME:" Margin="428,66,132,319"/>
+        <TextBlock Text="C L I E N T   I D:" Margin="60,66,447,314"/>
+        <TextBlock Text="S P I E C I E S:" Margin="244,66,281,319"/>
+        <TextBlock Text="N A M E:" Margin="428,66,123,319"/>
 
         <TextBlock Text="Animals list:"
                    Foreground="Black"
                    FontSize="27"
-                   FontFamily="/VetClinicApplication;component/Fonts/#Rampart One" Margin="10,126,364,230"/>
+                   FontFamily="Bodoni MT" Margin="10,126,364,230"/>
         <DataGrid Margin="10,170,10,10"
                   x:Name="AnimalDataGrid"/>
     </Grid>

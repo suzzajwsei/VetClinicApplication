@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VetClinicApplication", "Vet
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "VetClinicInstaller", "VetClinicInstaller\VetClinicInstaller.vdproj", "{ECC83C36-8565-48C0-B257-44F195F214E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VetAppTests", "VetAppTests\VetAppTests.csproj", "{BD8123B4-6942-417C-B85B-B0441781AB17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{53FE583A-205F-4F91-8B99-F1F055390543}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ECC83C36-8565-48C0-B257-44F195F214E1}.Debug|Any CPU.ActiveCfg = Debug
 		{ECC83C36-8565-48C0-B257-44F195F214E1}.Release|Any CPU.ActiveCfg = Release
+		{BD8123B4-6942-417C-B85B-B0441781AB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8123B4-6942-417C-B85B-B0441781AB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8123B4-6942-417C-B85B-B0441781AB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8123B4-6942-417C-B85B-B0441781AB17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

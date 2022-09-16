@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace VetClinicApplication.MVVM.Model
 {
-    class Animal
+    public class Animal
     {
         [Key]
         public int AnimalID { get; set; }
