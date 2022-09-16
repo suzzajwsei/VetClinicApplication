@@ -30,5 +30,11 @@ namespace VetClinicApplication.MVVM.Model
         {
             modelBuilder.UseSqlServer(connectionstring);
         }
+
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Chip>()
+        //        .HasOne(c => c.)
+        //}
     }
 }
