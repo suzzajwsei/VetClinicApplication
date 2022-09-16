@@ -31,10 +31,25 @@ namespace VetClinicApplication.MVVM.Model
             modelBuilder.UseSqlServer(connectionstring);
         }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Chip>()
-        //        .HasOne(c => c.)
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Chip>()
+                .HasNoKey();
+
+            modelBuilder.Entity<ClientAddress>()
+                .HasNoKey();
+
+            modelBuilder.Entity<Animal>()
+                .HasNoKey();
+
+            modelBuilder.Entity<MedProcedureList>()
+                .HasNoKey();
+
+            modelBuilder.Entity<RabiesVaccination>()
+                .HasNoKey();
+
+            //modelBuilder.Entity<Client>()
+            //    .HasNoKey();
+        }
     }
 }

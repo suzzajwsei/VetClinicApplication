@@ -10,5 +10,7 @@ namespace VetClinicApplication.MVVM.Model
     {
         public string AddInfo { get; set; }
         public int ChipNumber { get; set; }
+        public int ClientID { get; set; }
+        public int AnimalID { get; set; }
     }
 }

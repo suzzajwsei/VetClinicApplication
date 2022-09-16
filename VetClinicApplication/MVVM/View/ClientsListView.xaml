@@ -32,26 +32,27 @@
             <TextBox Width="110"
                  Height="35"
                  Margin="460,65,30,0"
-                     Style="{StaticResource ModernTextbox}"
+                     
                      x:Name="ClientPhone"/>
 
             <TextBox Width="110"
                  Height="35"
                  Margin="319,65,171,0"
-                     Style="{StaticResource ModernTextbox}"
+                     
                      x:Name="ClientPesel"/>
 
             <TextBox Width="110"
                  Height="35"
                  Margin="170,65,320,0"
-                     Style="{StaticResource ModernTextbox}"
+                     
                      x:Name="ClientSurname"/>
 
             <TextBox Width="110"
                  Height="35"
                  Margin="26,65,464,0"
-                     Style="{StaticResource ModernTextbox}"
+                     
                      x:Name="ClientName"/>
+
 
             <TextBlock Text="N A M E" Margin="26,67,507,67"
                    />

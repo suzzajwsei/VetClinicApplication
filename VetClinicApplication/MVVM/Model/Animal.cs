@@ -11,5 +11,6 @@ namespace VetClinicApplication.MVVM.Model
         public int AnimalID { get; set; }
         public string Species { get; set; }
         public string Name { get; set; }
+        public int ClientID { get; set; }
     }
 }
