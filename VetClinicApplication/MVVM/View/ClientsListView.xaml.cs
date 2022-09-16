@@ -44,5 +44,18 @@ namespace VetClinicApplication.MVVM.View
                 db.SaveChanges();
             }
         }
+        /// <summary>
+        /// this method allows us to read rows from db table clients
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ReadDBClients(object sender, RoutedEventArgs e)
+        {
+            using (var db= new AppDBContext())
+            {
+                var client =from c in db.Clients select c;
+                ClientDataGrid.ItemsSource = client.ToList();
+            }
+        }
     }
 }
