@@ -9,14 +9,14 @@
              Loaded="DataGChips">
     <Grid Background="#FFE7D4FF">
         <TextBlock Text="List of CHIPS registered in base: "
+                   
                    Foreground="Black"
                    FontSize="27"
-                   FontFamily="/VetClinicApplication;component/Fonts/#Rampart One"
+                   FontFamily="Felix Titling"
                    HorizontalAlignment="Center"
-                   Margin="0,30,0,0"/>
+                   Margin="0,15,0,325" Width="470"/>
         <DataGrid Width="600"
-                  Height="350"
-                  Margin="100,75,100,25"
+                  Margin="100,99,100,25"
                   x:Name="DataGridChips"/>
     </Grid>
 </UserControl>

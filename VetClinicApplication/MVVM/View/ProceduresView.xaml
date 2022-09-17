@@ -14,7 +14,7 @@
                    FontSize="27"
                 BorderThickness="0"
                 Click="Button_Click_Add_Procedure"
-                   FontFamily="/VetClinicApplication;component/Fonts/#Rampart One"
+                   FontFamily="Impact"
                    HorizontalAlignment="Center" Margin="0,0,0,348"/>
         <TextBox Width="110"
                  Height="35"
@@ -30,8 +30,8 @@
         <TextBlock Text="List of all medical procedures:"
                    Foreground="Black"
                    FontSize="25"
-                   FontFamily="/VetClinicApplication;component/Fonts/#Rampart One"
-                   Margin="10,131,215,232"/>
+                   FontFamily="Felix Titling"
+                   Margin="10,131,176,232"/>
 
         <DataGrid Margin="10,173,10,15"
                   x:Name="DataGridProcedures"/>

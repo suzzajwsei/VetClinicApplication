@@ -34,7 +34,7 @@
                        HorizontalAlignment="Center"
                        Foreground="FloralWhite"
                        FontSize="50"
-                       Margin="0,0,0,0" FontFamily="Stencil"
+                       Margin="0,0,0,0" FontFamily="Bodoni MT Black"
                        />
 
                 <Grid MouseDown="Grid_MouseDown"
@@ -49,7 +49,7 @@
                     <Button Click="Button_Click_Minimize"
                 Width="35"
                     Height="35"
-                    Background="White" Margin="689,10,75,55">
+                    Background="White" Margin="692,10,72,55">
                         ➖
                     </Button>
                 </Grid>
@@ -74,7 +74,7 @@
                              FontSize="22"
                              Style="{StaticResource MenuButtonTheme}"
                              IsChecked="True"
-                             Command="{Binding ClientViewCommand}"/>
+                             Command="{Binding ClientViewCommand}" FontFamily="Bahnschrift"/>
 
                 <RadioButton Content="Clients"
                              Height="80"

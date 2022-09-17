@@ -14,7 +14,7 @@
                 Background="Transparent"
                 BorderThickness="0"
                 Click="Button_Click_Add_Animal"
-                   FontFamily="Harlow Solid Italic"
+                   FontFamily="Impact"
                    HorizontalAlignment="Center" Margin="187,0,187,359"/>
 
         <TextBox Width="110"
@@ -39,7 +39,7 @@
         <TextBlock Text="Animals list:"
                    Foreground="Black"
                    FontSize="27"
-                   FontFamily="Bodoni MT" Margin="10,126,364,230"/>
+                   FontFamily="Felix Titling" Margin="10,126,364,230"/>
         <DataGrid Margin="10,170,10,10"
                   x:Name="AnimalDataGrid"/>
     </Grid>

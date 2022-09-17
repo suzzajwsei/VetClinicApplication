@@ -22,12 +22,12 @@
                 
             </Grid>
             <Image
-                   Source="C:\Users\Admin\source\repos\VetClinicApplication\VetClinicApplication\Images\cat.png" Margin="39,12,-65,-14" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+                   Source="C:\Users\Admin\source\repos\VetClinicApplication\VetClinicApplication\Images\cat.png" Margin="34,15,-60,-17" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
-                        <RotateTransform Angle="2.326"/>
+                        <RotateTransform Angle="1.017"/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </Image.RenderTransform>
@@ -41,7 +41,7 @@
                     FontSize="20"
                     Click="Button_Click_ToMain"
                     BorderBrush="Transparent"
-                    Width="100" Margin="26,10,224,145" FontFamily="Ravie">
+                    Width="100" Margin="26,10,224,145" FontFamily="Georgia">
 
             </Button>
         </Grid>
