@@ -26,6 +26,11 @@ namespace VetClinicApplication.MVVM.View
             InitializeComponent();
         }
 
+        /// <summary>
+        /// button allowing us to add animal to sql db
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void Button_Click_Add_Animal(object sender, RoutedEventArgs e)
         {
 
@@ -42,7 +47,11 @@ namespace VetClinicApplication.MVVM.View
             }
         }
 
-
+        /// <summary>
+        /// allows to see records from database in data grid
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ReadDBAnimals(object sender, RoutedEventArgs e)
         {
             using (var db = new AppDBContext())

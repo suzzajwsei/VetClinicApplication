@@ -25,12 +25,18 @@ namespace VetClinicApplication.MVVM.Model
         public DbSet<MedProcedureList> MedProceduresList { get; set; }
 
         public DbSet<RabiesVaccination> RabiesVaccinations { get; set; }
-        
+        /// <summary>
+        /// configuration of connection with db
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnConfiguring(DbContextOptionsBuilder modelBuilder)
         {
             modelBuilder.UseSqlServer(connectionstring);
         }
-
+        /// <summary>
+        /// Key definition in database
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Chip>()
